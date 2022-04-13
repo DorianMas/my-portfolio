@@ -1,9 +1,15 @@
-import "./App.css";
+import Navbar from "./components/Navbar";
+import Main from "./components/Main";
 
 function App() {
   return (
-    <div>
-      Hello from <a href="https://www.lereacteur.io">Le Reacteur !</a>
+    <div
+      style={{
+        boxSizing: "border-box",
+      }}
+    >
+      <Navbar />
+      <Main />
     </div>
   );
 }
