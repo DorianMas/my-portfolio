@@ -1,0 +1,157 @@
+.app__work-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0a192f;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 4rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+.app__work-title_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.app__work-title_container h2 {
+    border-bottom: 4px solid #6fff85d8;
+    font-weight: bold;
+    font-size: 4rem;
+    padding-bottom: 10px;
+    width: fit-content;
+}
+
+.app__work-title_container p {
+    font-size: 1.2rem;
+}
+
+.app__work-projects_container {
+    display: grid;
+    grid-template-columns: repeat(2, 550px);
+    /* grid-template-rows: repeat(2, 350px); */
+    gap: 20px;
+    margin-top: 1rem;
+    justify-items: center;
+    align-items: center;
+
+/* background-color: aqua; */
+}
+
+
+
+.app__work-project_item {
+   width: 550px;
+   height: 250px;
+   /* background-color: antiquewhite; */
+   border-radius: 10px;
+
+   position: relative;
+
+
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+
+.app__work-project_item-buttons {
+    display: none;
+}
+
+.app__work-project_item:hover {
+    background-image:none!important;
+}
+
+.app__work-project_item:hover .app__work-project_item-buttons {
+    position: absolute;
+    top:0;
+    left:0;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    z-index: 1;
+
+    background: linear-gradient(
+        to right,
+        rgba(138, 255, 112, 0.8),
+        hsla(161, 74%, 61%, 0.722)   
+    )!important;
+    border-radius: 10px;
+}
+
+.app__work-project_item-buttons span {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.app__work-project_item-buttons button {
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    outline: none;
+
+    padding:1rem;
+    margin: 1rem;
+
+    color: grey;
+    font-weight: bold;
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+@media screen and (max-width:1024px) {
+    .app__work-container {
+    padding: 2rem;
+}    
+
+.app__work-title_container h2 {
+    font-size: 2rem;
+    padding-bottom: 5px;
+}
+
+.app__work-title_container p {
+    font-size: 1rem;
+}
+
+.app__work-projects_container {
+
+    /* grid-template-columns: repeat(1, 250px); */
+    /* grid-template-rows: repeat(1, 350px); */
+display: flex;
+flex-wrap: wrap;
+    height: auto;
+    /* background-color: antiquewhite; */
+
+ }
+
+ .app__work-project_item {
+     max-width: 250px;
+ }
+
+ .app__work-project_item img {
+     object-fit: cover;
+ }
+
+ .app__work-project_item-buttons span {
+     font-size: 1rem;
+ }
+
+ .app__work-project_item-buttons button{
+     font-size: 0.8rem;
+ }
+}

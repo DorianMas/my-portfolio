@@ -1,11 +1,13 @@
 .app__main-container {
     background-color: #0a192f;
-    /* height: 100%; */
+     height: 100vh;
     width: 100%;
-    padding: 2rem 4rem;
+    padding: 0 4rem;
     font-family: 'Open Sans', sans-serif;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 
@@ -15,7 +17,7 @@
     flex-direction: column;
 }
 
-.app__main_title-container p {
+.app__main_title-intro {
     color: #6FFF84;
     font-size: 2rem;
 }
@@ -32,12 +34,21 @@
     margin-top: 10px;
 }
 
+
+.app__main-title-description {
+        color:white;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        line-height: 1.5;
+        max-width: 900px;
+}
+
 .app__main-button button {
     background-color: #0a192f;
     color:white;
     border: 2px solid white;
     padding: 10px 20px;
-    margin-top: 10px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,8 +58,12 @@
 }
 
 .app__main-button button:hover {
-    background-color: #6fff85d8;
-    border: 2px solid #6fff85d8;
+    background: linear-gradient(
+        to right,
+        rgba(138, 255, 112, 0.8),
+        hsla(161, 74%, 61%, 0.722)   
+    )!important;
+    border: none;
 
     cursor: pointer;
 }
@@ -59,15 +74,20 @@
 }
 
 
-@media screen and (max-width:850px) {
+@media screen and (max-width:1024px) {
+
+    .app__main-container {
+    padding: 2rem;
+    }
+
     .app__main_title-container p {
         font-size: 1rem;
     }
     .app__main_title-container h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .app__main_title-container h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .app__main_title-container span {

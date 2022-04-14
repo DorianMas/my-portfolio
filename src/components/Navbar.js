@@ -8,9 +8,9 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ nav, setNav }) => {
   //Gestion du menu
-  const [nav, setNav] = useState(false);
+
   const handleClick = () => setNav(!nav);
 
   return (

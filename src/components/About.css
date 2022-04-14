@@ -1,0 +1,99 @@
+.app__about-container {
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #0a192f;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 0 4rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.app__about-subcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    max-width: 1400px;
+    width: 100%;
+    gap: 20px;
+}
+
+.app__about-subcontainer_grid {
+    /* border-color: red;
+    border-style: solid;
+    border-width: 2px; */
+    max-width: 100%;
+    height: 400px;
+    display: column;
+    justify-content: flex-end;
+    flex:1;
+}
+
+.app__about-subcontainer_grid-title1, .app__about-subcontainer_grid-title2 {
+    margin-bottom:2rem;
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+}
+
+.app__about-subcontainer_grid-title1 p {
+    border-bottom: 4px solid #6fff85d8;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.app__about-subcontainer_grid-description1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-align: end;
+}
+
+.app__about-subcontainer_grid-description2 {
+    font-size: 1.2rem;
+    text-align: start;
+    line-height: 1.5;
+}
+
+@media screen and (max-width:1024px) {
+    
+    .app__about-container {
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .app__about-subcontainer {
+        flex-direction: column;
+        /* height: 200px; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .app__about-subcontainer_grid-title1 {
+        margin-bottom:2rem;
+        display: flex;
+        justify-content: flex-start;
+        height: 40px;
+
+    }
+
+    .app__about-subcontainer_grid-title1 p {
+        font-size: 2rem;
+    }
+    
+    .app__about-subcontainer_grid-description1 {
+        font-size: 1.5rem;
+        text-align: start;
+    }
+
+    .app__about-subcontainer_grid-title2 {
+        display: none;
+    }
+    
+    .app__about-subcontainer_grid-description2 {
+        font-size: 1rem;
+
+    }
+
+}
