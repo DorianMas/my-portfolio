@@ -1,6 +1,6 @@
 .app__footer-container {
     width: 100%;
-    /* height: 100vh; */
+    min-height: 30vh;
     background-color: #0a192f;
     color: white;
     font-family: 'Open Sans', sans-serif;

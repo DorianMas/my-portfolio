@@ -1,6 +1,6 @@
 .app__main-container {
     background-color: #0a192f;
-     height: 100vh;
+    min-height: 100vh;
     width: 100%;
     padding: 0 4rem;
     font-family: 'Open Sans', sans-serif;
