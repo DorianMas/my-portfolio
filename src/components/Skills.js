@@ -10,9 +10,9 @@ import "./Skills.css";
 
 const Skills = ({ nav }) => {
   return (
-    <>
+    <div className="app__skills-container">
       {!nav && (
-        <div className="app__skills-container">
+        <>
           <div className="app__skills-title_container">
             <h2 className="app__skills-title">Experience</h2>
             <p>// These are the technologies I learn and work with</p>
@@ -43,9 +43,9 @@ const Skills = ({ nav }) => {
               <p>GITHUB</p>
             </div>
           </div>
-        </div>
+        </>
       )}
-    </>
+    </div>
   );
 };
 

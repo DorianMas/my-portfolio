@@ -20,6 +20,14 @@
 }
 
 
+.app__navbar-mobile_menu-list li:hover, .app__navbar-mobile_menu-button:hover {
+    color: #6fff85d8;
+
+    cursor: pointer;
+    transform: scale(1.5);
+    transition-duration: 300ms;
+}
+
 .app__navbar_contact {
     display: flex;
     flex-direction: column;
@@ -94,9 +102,8 @@
 
     font-size: 3rem;
     background-color: #0a192f;
-
-
 }
+
 
 .app__navbar_contact-socialmedia {
     display: none;

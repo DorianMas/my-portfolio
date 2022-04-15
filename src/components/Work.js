@@ -7,9 +7,9 @@ import "./Work.css";
 
 const Work = ({ nav }) => {
   return (
-    <>
+    <div className="app__work-container">
       {!nav && (
-        <div className="app__work-container">
+        <>
           <div className="app__work-title_container">
             <h2>Work</h2>
             <p>// Check out my recent work</p>
@@ -97,9 +97,9 @@ const Work = ({ nav }) => {
               </div>
             </div>
           </div>
-        </div>
+        </>
       )}
-    </>
+    </div>
   );
 };
 
