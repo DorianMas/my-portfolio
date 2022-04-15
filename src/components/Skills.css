@@ -82,14 +82,21 @@
 
 
     .app__skills-container {
-        padding: 1rem 2rem;
-
+        padding: 1rem 0;
     }
 
-   
+
+    .app__skills-title_container h2 {
+        font-size: 2rem;
+        padding-bottom: 5px;
+        padding: 0 1rem;
+    }
+
 
     .app__skills-title_container p {
         font-size: 1rem;
+        padding: 0 1rem;
+
     }
 
     .app__skills-technos {
@@ -109,11 +116,7 @@
     .app__skills-technos_logo {
         max-width: 100px;
         font-size: 0.8rem;
-    }
-
-    .app__skills-title_container h2 {
-        font-size: 2rem;
-        padding-bottom: 5px;
+        margin: 0.2rem;
     }
 
     .app__skills-technos_logo p {
