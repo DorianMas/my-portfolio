@@ -62,7 +62,7 @@
 
 .app__skills-technos_logo:hover {
     cursor: pointer;
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition-duration: 300ms;
     z-index: 2;
 }

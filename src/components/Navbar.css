@@ -15,6 +15,19 @@
     display: flex;
 }
 
+.app__navbar_menu li {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.app__navbar_menu li:hover {
+    cursor: pointer;
+    color: #6fff85d8;
+    transform: scale(1.2);
+    transition-duration: 300ms;
+
+}
+
 .app__navbar-mobile_menu-button, .app__navbar-mobile_menu-list {
     display: none;
 }
