@@ -89,13 +89,13 @@
     .app__skills-title_container h2 {
         font-size: 2rem;
         padding-bottom: 5px;
-        padding: 0 1rem;
+        margin: 0 1rem;
     }
 
 
     .app__skills-title_container p {
         font-size: 1rem;
-        padding: 0 1rem;
+        margin: 0 1rem;
 
     }
 
@@ -105,21 +105,31 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-
         grid-template-columns: none;
         grid-template-rows: none; */
         display: grid;
-        grid-template-columns: repeat(2, 150px);
+        grid-template-columns: repeat(3, 150px);
         grid-template-rows: repeat(2, 150px);
+        margin: 1rem 0;
+
     }
 
     .app__skills-technos_logo {
         max-width: 100px;
         font-size: 0.8rem;
         margin: 0.2rem;
+        padding: 0.2rem;
     }
 
     .app__skills-technos_logo p {
         font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .app__skills-technos {
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(3, 150px);
+
     }
 }
