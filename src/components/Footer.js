@@ -38,7 +38,11 @@ const Footer = ({ nav }) => {
             >
               <HiOutlineMail size={45} />
             </a>
-            <a className="app__footer-contact-item" href="" target="_blank">
+            <a
+              className="app__footer-contact-item"
+              href="https://drive.google.com/file/d/1T6hCygv88jwoKe5bIutQjf6RON1qf-gi/view"
+              target="_blank"
+            >
               <BsFillPersonLinesFill size={45} />
             </a>
           </div>

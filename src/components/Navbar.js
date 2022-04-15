@@ -95,7 +95,10 @@ const Navbar = ({ nav, setNav }) => {
             className="app__navbar_contact-socialmedia"
             style={{ backgroundColor: "rgb(80, 00, 3 )" }}
           >
-            <a href="" target="_blank">
+            <a
+              href="https://drive.google.com/file/d/1T6hCygv88jwoKe5bIutQjf6RON1qf-gi/view"
+              target="_blank"
+            >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
           </li>
