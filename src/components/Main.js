@@ -12,8 +12,8 @@ const Main = ({ nav }) => {
           <h2>I'm a Junior Frontend Developer.</h2>
           <p className="app__main-title-description">
             I'm currently looking for a 6-month internship. I work on Javascript
-            with the MERN stack. You can can find most of my work on my website
-            and on my Github profile.
+            with the MERN stack. You can find most of my work on my website and
+            on my Github profile.
           </p>
           <div className="app__main-button">
             <button>
