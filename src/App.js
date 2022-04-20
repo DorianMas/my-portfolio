@@ -7,15 +7,13 @@ import Footer from "./components/Footer";
 
 import { useState } from "react";
 
-import { Link } from "react-scroll";
-
 function App() {
   const [nav, setNav] = useState(false);
 
   return (
     <div>
       <Navbar nav={nav} setNav={setNav} />
-      <Main nav={nav} />
+      <Main nav={nav} setNav={setNav} />
       <About nav={nav} />
       <Skills nav={nav} />
       <Work nav={nav} />

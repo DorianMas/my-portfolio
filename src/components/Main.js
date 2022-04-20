@@ -1,8 +1,11 @@
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-scroll";
 
 import "./Main.css";
 
-const Main = ({ nav }) => {
+const Main = ({ nav, setNav }) => {
+  const handleClick = () => setNav(!nav);
+
   return (
     <div className="app__main-container">
       {!nav && (
@@ -16,12 +19,14 @@ const Main = ({ nav }) => {
             on my Github profile.
           </p>
           <div className="app__main-button">
-            <button>
-              View Work
-              <span className="app__main-button-arrow">
-                <HiArrowNarrowRight size={20} />
-              </span>
-            </button>
+            <Link to="app__work-container" smooth="true" duration={500}>
+              <button>
+                View Work
+                <span className="app__main-button-arrow">
+                  <HiArrowNarrowRight size={20} />
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
       )}
